@@ -39,7 +39,7 @@
         <DataGrid x:Name="TotalGrid" Grid.Column="2" Grid.ColumnSpan="3" Grid.RowSpan="3" Grid.Row="1"/>
         <ComboBox Name="AlcoBox" SelectionChanged="AlcoBox_SelectionChanged" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Grid.Row="1" FontSize="40"/>
         <Label Content="Alcohol type:" FontSize="25" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center"/>
-        <Button Content="Calculate" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontSize="40" Grid.Row="4" VerticalAlignment="Center"/>
+        <Button Content="Calculate" Click="Calculate_Click" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontSize="40" Grid.Row="4" VerticalAlignment="Center"/>
 
     </Grid>
 </Window>
