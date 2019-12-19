@@ -1,0 +1,21 @@
+[{
+	"Name": "Light",
+	"Description": "Muscles relax, mood improves, there is a sense of comfort. Man becomes sociable, bold, unnecessarily active.",
+	"Concentration": 1.5
+},
+{
+	"Name": "Middle",
+	"Description": "Speech is monotonous, sometimes indistinct. Coordination of movements is broken. There is irritability, rudeness and aggression to others or strangers. With a moderate degree of intoxication, most people are ready to start a quarrel or a fight. There are short-term memory lapses.",
+	"Concentration": 2.5
+},
+{
+	"Name": "Hard",
+	"Description": "coordination is completely lost, speech is slurred, often accompanied by complete loss of memory. Often, with strong intoxication, a person loses consciousness, involuntary urination can be observed.",
+	"Concentration": 3
+},
+{
+	"Name": "Extreme",
+	"Description": "fraught with loss of health or death. A concentration above 5% is considered a lethal dose of alcohol, at which the victim can only be saved in a medical facility.",
+	"Concentration": 5
+}
+]
