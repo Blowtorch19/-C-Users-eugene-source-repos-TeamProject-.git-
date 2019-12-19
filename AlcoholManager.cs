@@ -6,11 +6,6 @@ using System.Text;
 
 namespace TeamProject
 {
-    /// <summary>
-    /// 1)убрать хардкод 2 переменных здесь, 
-    /// 2)сделать "справку" в xaml,
-    /// 3)поправить xaml чтоб было по симпатичнее
-    /// </summary>
     public class AlcoholManager
     {
         public List<Alcohol> alcohols;
@@ -18,7 +13,7 @@ namespace TeamProject
         public List<Conditions> conditions;
         public List<UserConditions> userConditions; //лист для DataGrid
         private const double _B60 = 0.15; //это не изменяющийся параметр, показывающий кол-во промилле выводящееся за час из организма
-        private double _density = 0.7893; //плотность этанола для перевода массы алкоголя в граммы
+        private const double _density = 0.7893; //плотность этанола для перевода массы алкоголя в граммы
 
         public AlcoholManager()
         {
