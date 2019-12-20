@@ -1,0 +1,35 @@
+﻿<Window x:Class="WPFteamProj.Instruction"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFteamProj"
+        mc:Ignorable="d"
+        Title="Instruction" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Center" FontSize="28" TextWrapping="Wrap" VerticalAlignment="Center"
+                   Text="This app calculate the volume of alcohol you can drink to deserve diffrent phases of drunkenness and how many hours left you can drive. If in the list of alcohol types you can't find the right type, write in follow field the alcoholic beverage.
+                   
+                   
+                   
+                   
+                   How to use:
+                   
+                   
+                   
+                   1. Fill all fields
+                   
+                   
+                   
+                   2.Click Calculate Button
+                   
+                   
+                   3.To learn more about different phases of drunkenness click Info Button" />
+
+
+    </Grid>
+</Window>
