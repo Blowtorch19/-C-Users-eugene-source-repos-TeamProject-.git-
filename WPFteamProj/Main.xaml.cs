@@ -49,9 +49,32 @@ namespace WPFteamProj
             }
             else
             {
-                user.Age = int.Parse(ageBox.Text);
-                user.Weight = double.Parse(weightBox.Text);
-                return true;
+                try
+                {
+                    Convert.ToInt32(ageBox.Text);
+                    Convert.ToDouble(weightBox.Text);
+                }
+                catch (Exception)
+                {
+                    ageBox.Text = null;
+                    weightBox.Text = null;
+                    MessageBox.Show("Fill all fields correctly!", "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return false;
+                }
+
+                if (double.Parse(weightBox.Text) > 0)
+                {
+                    user.Age = int.Parse(ageBox.Text);
+                    user.Weight = double.Parse(weightBox.Text);
+                    return true;
+                }
+                else
+                {
+                    weightBox.Text = null;
+                    MessageBox.Show("Fill all fields correctly!", "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return false;
+                }
+                
             }
         }
 
