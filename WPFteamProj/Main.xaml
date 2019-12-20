@@ -21,10 +21,10 @@
             <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
-        <Label Content="Welcome to Spirtolyator!" Grid.ColumnSpan="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40"/>
+       <Label Content="Welcome to Spirtolyator!" Grid.ColumnSpan="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40"/>
 
         <Label Content="Sex:" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" FontSize="30"/>
-        <ComboBox Name="Sex" Grid.Row="2" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25" SelectionChanged="Sex_SelectionChanged" StaysOpenOnEdit="True">
+        <ComboBox Name="Sex" Grid.Row="2" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" SelectionChanged="Sex_SelectionChanged" StaysOpenOnEdit="True">
             <ComboBoxItem Name="male" Content="male"></ComboBoxItem>
             <ComboBoxItem Name="female" Content="female"></ComboBoxItem>
         </ComboBox>
@@ -36,12 +36,14 @@
         <TextBox x:Name="weightBox" Grid.Row="3" Grid.Column="1" Margin="20" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 
         <Button x:Name="Exit" Click="Exit_Click" Content="Exit" Grid.Column="5" Grid.Row="4" Margin="10" FontSize="40" HorizontalContentAlignment="Center"/>
-        <DataGrid x:Name="TotalGrid" Grid.Column="2" Grid.ColumnSpan="3" Grid.RowSpan="3" Grid.Row="1"/>
-        <ComboBox Name="AlcoBox" SelectionChanged="AlcoBox_SelectionChanged" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Grid.Row="1" FontSize="40"/>
+        <DataGrid x:Name="TotalGrid" Grid.Column="2" Grid.ColumnSpan="3" Grid.RowSpan="2" Grid.Row="1" Margin="50, 20"/>
+        
+        <ComboBox Name="AlcoBox" SelectionChanged="AlcoBox_SelectionChanged" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" Grid.Row="1" FontSize="25"/>
         <Label Content="Alcohol type:" FontSize="25" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center"/>
         <Button Content="Calculate" Click="Calculate_Click" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontSize="40" Grid.Row="4" VerticalAlignment="Center"/>
         <Button Content="Info" Click="Info_Click" Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="40"/>
         <Button Name="How_Button" Click="How_Button_Click" Content="How to use?" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="25"/>
+        <TextBlock Grid.Column="2" Grid.ColumnSpan="3" HorizontalAlignment="Center" Grid.Row="3" Text="*To learn more about phases click on info button" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
 
     </Grid>
 </Window>
