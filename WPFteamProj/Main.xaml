@@ -41,6 +41,7 @@
         <Label Content="Alcohol type:" FontSize="25" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center"/>
         <Button Content="Calculate" Click="Calculate_Click" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontSize="40" Grid.Row="4" VerticalAlignment="Center"/>
         <Button Content="Info" Click="Info_Click" Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="40"/>
+        <Button Name="How_Button" Click="How_Button_Click" Content="How to use?" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="25"/>
 
     </Grid>
 </Window>
