@@ -53,17 +53,7 @@ namespace TeamProject
             }
         }
 
-        public void Serialize<T>(string fileName, T data)
-        {
-            using (var sw = new StreamWriter(fileName))
-            {
-                using (var jsonWriter = new JsonTextWriter(sw))
-                {
-                    var serializer = new JsonSerializer();
-                    serializer.Serialize(jsonWriter, data);
-                }
-            }
-        }
+
 
         private void LoadData()
         {
