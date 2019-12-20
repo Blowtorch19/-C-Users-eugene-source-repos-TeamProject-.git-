@@ -133,5 +133,11 @@ namespace WPFteamProj
             Info info = new Info();
             info.Show();
         }
+        
+        private void How_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Instruction instruction = new Instruction();
+            instruction.Show();
+        }
     }
 }
