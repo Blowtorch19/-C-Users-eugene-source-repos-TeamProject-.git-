@@ -30,7 +30,7 @@ namespace TeamProject
                 var A = (c * user.Weight * user.WidmarK * 100) / (k * _density * 0.7);
                 var hours = c / _B60;
                 var step1 = userConditions.Find(i => i.Name == item.Name);
-                step1.Volume = Convert.ToUInt32(A);
+                step1.Volume = Convert.ToInt32(A);
                 step1.Hours = Convert.ToInt32(hours);
                 
             }
